@@ -11,8 +11,8 @@ import {
 
 export function BentoGridSecondDemo() {
   return (
-    <div className="h-[100vh] w-[100vw] flex justify-center items-center ">
-    <BentoGrid className="max-w-9xl scale-110 mx-auto md:auto-rows-[20rem] ">
+    <div className="flex justify-center items-center ">
+    <BentoGrid className="">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -31,7 +31,7 @@ export function BentoGridSecondDemo() {
 export default function Page()
 {
   return(
-    <HeroHighlight>
+    <HeroHighlight className="max-w-10xl h-[100vh] w-[100vw] scale-110 mx-auto md:auto-rows-[20rem] ">
       <BentoGridSecondDemo />
     </HeroHighlight>
   )
